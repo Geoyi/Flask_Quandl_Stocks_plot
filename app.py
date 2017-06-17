@@ -23,7 +23,7 @@ def datetime(x):
     return np.array(x, dtype=np.datetime64)
 
 def get_data(name):
-    API_key = 'Lna2bo1e94UxhDJSsb8D'
+    API_key = '<API key>'
     data = Qd.get('WIKI/%s' %name, trim_start = '2010-01-01', trim_end = '2017-06-01', authtoken=API_key)
     columns_tokeep =['Adj. Open','Adj. High','Adj. Low','Adj. Close','Adj. Volume']
     df = pd.DataFrame(data)
