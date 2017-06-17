@@ -1,0 +1,24 @@
+<!doctype html>
+<title>Stock Ticker Milestone</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='mystyle.css')}}'>
+<div class=page>
+  <h1>Stock Ticker</h1>
+
+  <div class=metanav>
+
+    Please enter a stock ticker, e.g. FB, AAPL, GOOG
+
+    <h4>
+      <form id='input' method='post' action='index' >
+        <p>
+          Ticker Symbol: <input type='text' name='ticker' />  
+          
+        </p>
+
+        <p>
+          <input type='submit' value='Submit' />
+        </p>
+      </form>
+    </h4>
+  </div>
+</div>
